@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Georgia, Times; font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Merriweather', Georgia, Times; font-weight: 700;}
+
+blockquote p { font-size: 16px; line-height: 1.6em; }
+
+/* Masthead */
+.header, .footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
+
+/* Navigation */
+h3.text-muted a {text-decoration: none; color: #999999; }
+h3.text-muted a:hover { text-decoration: none; color: #0088cc; }
+
+/* Homepage flip image*/
+.flippable {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 30px;
+	-webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+}
+.flippable .front-img {
+	-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+}
+.flippable .img-circle {  /*.avatar*/
+	display: none;
+	position: absolute;
+	margin-bottom: 30px; 
+	top: 0;
+	left: 0;
+	z-index: 99;
+	-webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+}
+.flippable:hover .img-circle {
+	display: inline;
+	margin-bottom: 30px; 
+} 
+		
+/* Custom container */
+.container > hr { margin: 30px 0; }
+.container > hr.footer {margin-bottom: 15px; }
+
+/* E-Mail */
+.obfuscate { unicode-bidi: bidi-override; direction: rtl; }
+
+/* Jumbotron */     
+.jumbotron { margin: 80px 0; }
+.jumbotron h1 { font-size: 72px; line-height: 1; }
+.jumbotron .btn { font-size: 21px; padding: 14px 24px; }
+.marketing p { line-height: 25px; }
+.marketing p.lead { line-height: 30px; }
+
+/* CV */
+.cv {line-height: 23px; width: 90%; margin: 0 auto;}
+.cv li { line-height: 23px; }
+.cv h2 { font-size: 26.5px; }
+.cv h1 { font-size: 32.5px; }
+
+/* CV Skills */
+.progress-label {
+	padding: 0px 10px;
+	float: left;
+	margin-bottom: 0px;
+	top: -4px;
+	position: relative;
+	min-width: 80px;
+}
+
+.contact, .about, .cv, .error { margin-bottom: 30px; }
+
+/* Contact */
+iframe {font-family: 'Merriweather', Georgia, Times; font-size: 16px;}
+
+/* About */
+.about ul.list-unstyled li { line-height: 30px; text-indent: -30px; margin-left: 30px;}
+
+/* Code */
+pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
+
+.step {
+	border-radius: 50%; 
+	-moz-border-radius: 50%; 
+	-webkit-border-radius: 50%; 
+	width: 35px; 
+	height: 35px; 
+	background: #4679BD; 
+	color: #FFF; 
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 5.5px;
+	margin: 5px 15px 0px 0px;
+	font-family: 'Montserrat', Helvetica, sans-serif;
+}
